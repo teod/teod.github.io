@@ -271,7 +271,16 @@ const monthNames = [
 
   term.onKey(e => {
     const printable =
-      !e.domEvent.altKey && !e.domEvent.ctrlKey && !e.domEvent.metaKey
+      !e.domEvent.altKey &&
+      !e.domEvent.ctrlKey &&
+      !e.domEvent.metaKey &&
+      e.domEvent.keyCode !== 38 &&
+      e.domEvent.keyCode !== 40 &&
+      e.domEvent.keyCode !== 9 &&
+      e.domEvent.keyCode !== 39 &&
+      e.domEvent.keyCode !== 37
+
+    console.log(e.domEvent.keyCode)
 
     if (e.domEvent.keyCode === 13) {
       console.log('currentLine', currentLine)

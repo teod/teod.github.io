@@ -140,8 +140,18 @@ var monthNames = [
             term.writeln('Open npm profile [y/n] ?');
             writeWhite();
         },
+        resume: function () {
+            attachPromptAction(function () {
+                prompt();
+                openUrl('https://teod.github.io/resume.html');
+            });
+            writeCyan();
+            term.writeln('https://teod.github.io/resume.html');
+            term.writeln('Open non-interactive resume [y/n] ?');
+            writeWhite();
+        },
     };
-    var commandsWithHijackedPrompt = ['linkedin', 'github', 'npm'];
+    var commandsWithHijackedPrompt = ['linkedin', 'github', 'npm', 'resume'];
     var currentLine = '';
     var prompt = function () {
         term.write('\r\n$ ');
@@ -200,6 +210,8 @@ var monthNames = [
     term.writeln("Welcome to Teodor Druta's interactive resume !");
     writeWhite();
     term.writeln('');
+    writeWhite();
+    term.writeln('This is an interactive resume requiring input of commands for specific output. If you wish to browse the non-interactive version type \x1b[35m`resume`\x1b[37m in the terminal.');
     writeCyan();
     term.writeln('Start by typing \x1b[35m`help`\x1b[36m in the command line to see a full list of commands.');
     writeWhite();

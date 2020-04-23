@@ -1,10 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>teod.github.com</title>
-  </head>
-  <body>
-    Nothing to see here
-  </body>
-</html>
+<!doctype html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <div id="terminal"></div>
+      <script src="node_modules/xterm/lib/xterm.js"></script>
+      <script src="node_modules/xterm-addon-fit/lib/xterm-addon-fit.js"></script>
+      <script>
+        window.FitAddon = FitAddon.FitAddon
+      </script>
+      <script>
+        var request = new XMLHttpRequest();
+        request.overrideMimeType("application/json");
+        request.open("GET", '/resume.json', true);
+        request.onreadystatechange = function() {
+            if (request.readyState === 4 && request.status == "200") {
+                window.resume = JSON.parse(request.responseText)
+            }
+        }
+        request.send(null);
+      </script>
+      <script src="dist/main.js"></script>
+    </body>
+  </html>

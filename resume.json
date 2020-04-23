@@ -1,0 +1,200 @@
+{
+  "basics": {
+    "name": "Teodor Druta",
+    "label": "Software Engineer",
+    "picture": "",
+    "email": "teodruta@gmail.com",
+    "phone": "",
+    "website": "https://teod.github.io",
+    "summary": "Javascript Engineer",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Cluj-Napoca",
+      "countryCode": "RO",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Teodor Druta",
+        "url": "https://www.linkedin.com/in/teodor-druta"
+      },
+      {
+        "network": "github",
+        "username": "teod",
+        "url": "https://github.com/teod"
+      },
+      {
+        "network": "npm",
+        "username": "teod",
+        "url": "https://www.npmjs.com/~teod"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Softvision",
+      "endDate": "",
+      "highlights": [
+        "React",
+        "React Native",
+        "GraphQL",
+        "Apollo Client",
+        "Storybook",
+        "Webpack",
+        "Babel",
+        "Jest",
+        "Cypress",
+        "Detox"
+      ],
+      "position": "Software Engineer",
+      "startDate": "2019-03-31",
+      "summary": null,
+      "website": "https://www.linkedin.com/company/33617"
+    },
+    {
+      "company": "SmartUp.io",
+      "endDate": "2019-02-28",
+      "highlights": [
+        "React",
+        "React Native",
+        "Redux",
+        "RxJS",
+        "Webpack",
+        "Babel",
+        "Fastlane",
+        "Expo",
+        "Redux Saga"
+      ],
+      "position": "Software Engineer",
+      "startDate": "2016-11-30",
+      "summary": null,
+      "website": "https://www.linkedin.com/company/9475890"
+    },
+    {
+      "company": "Modus Create, Inc",
+      "endDate": "2016-11-30",
+      "highlights": ["React", "Redux", "Webpack", "Babel"],
+      "position": "Software Engineer Consultant",
+      "startDate": "2016-09-30",
+      "summary": null,
+      "website": "https://www.linkedin.com/company/1988641"
+    },
+    {
+      "company": "Lohika",
+      "endDate": "2016-11-30",
+      "highlights": ["React", "Redux", "Webpack", "Babel"],
+      "position": "Software Engineer",
+      "startDate": "2016-06-30",
+      "summary": null,
+      "website": "https://www.linkedin.com/company/12127"
+    },
+    {
+      "company": "Softvision",
+      "endDate": "2016-06-30",
+      "highlights": [
+        "React",
+        "Redux",
+        "Webpack",
+        "Babel",
+        "Redux Saga",
+        "Python",
+        "Jenkins",
+        "PHP",
+        "Zend"
+      ],
+      "position": "Software Engineer",
+      "startDate": "2014-08-31",
+      "summary": null,
+      "website": "https://www.linkedin.com/company/33617"
+    },
+    {
+      "company": "Linkscreens",
+      "endDate": "2014-08-31",
+      "highlights": ["jQuery", "EmberJS"],
+      "position": "Software Engineer",
+      "startDate": "2013-07-31",
+      "summary": null,
+      "website": ""
+    },
+    {
+      "company": "Mejix",
+      "endDate": "2012-12-31",
+      "highlights": [
+        "PHP",
+        "Wordpress",
+        "MySQL",
+        "Magento",
+        "jQuery",
+        "CodeIgniter"
+      ],
+      "position": "Software Engineer",
+      "startDate": "2012-06-30",
+      "summary": null,
+      "website": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universitatea Tehnică din Cluj-Napoca",
+      "area": "Tehnologia informației",
+      "studyType": "",
+      "startDate": "2009",
+      "endDate": "2013",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "Javascript",
+      "level": "",
+      "keywords": ["Javascript"]
+    },
+    {
+      "name": "React",
+      "level": "",
+      "keywords": ["React"]
+    },
+    {
+      "name": "React Native",
+      "level": "",
+      "keywords": ["React Native"]
+    },
+    {
+      "name": "NodeJS",
+      "level": "",
+      "keywords": ["NodeJS"]
+    },
+    {
+      "name": "GraphQL",
+      "level": "",
+      "keywords": ["GraphQL"]
+    },
+    {
+      "name": "Webpack",
+      "level": "",
+      "keywords": ["Webpack"]
+    },
+    {
+      "name": "Typescript",
+      "level": "",
+      "keywords": ["Typescript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": ""
+    },
+    {
+      "language": "Romanian",
+      "fluency": ""
+    },
+    {
+      "language": "Russian",
+      "fluency": ""
+    }
+  ]
+}

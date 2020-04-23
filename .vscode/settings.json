@@ -1,0 +1,26 @@
+{
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 24,
+  "search.useIgnoreFiles": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "prettier.singleQuote": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.workingDirectories": ["mobile", "shared", "web"]
+}

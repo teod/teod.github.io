@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "xterm": "^4.5.0",
+    "xterm-addon-fit": "^0.3.0"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "postinstall": "cp node_modules/xterm/lib/xterm.js xterm.js && cp node_modules/xterm-addon-fit/lib/xterm-addon-fit.js xterm-addon-fit.js"
+    "postinstall": "cp node_modules/xterm/lib/xterm.js public/xterm.js && cp node_modules/xterm/css/xterm.css public/xterm.css && cp node_modules/xterm-addon-fit/lib/xterm-addon-fit.js public/xterm-addon-fit.js"
   },
   "devDependencies": {
     "typescript": "^3.8.3"

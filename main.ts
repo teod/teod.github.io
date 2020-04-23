@@ -29,6 +29,21 @@ const getObjValue = (obj, keys) => {
   return obj[key]
 }
 
+const monthNames = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+]
+
 ;(function () {
   const term: XTerminal = new (<any>window).Terminal({
     theme: {
@@ -78,12 +93,21 @@ const getObjValue = (obj, keys) => {
       const work = getResumeValue('work')
 
       work.forEach(value => {
+        const startDate = new Date(value.startDate)
+        const endDate = new Date(value.endDate)
+
         writeGreen()
         term.writeln(`  - ${value.company}`)
         writeCyan()
         term.writeln(
-          `    • Start Date: \x1b[37m${value.startDate} ${
-            value.endDate ? `\x1b[36mEnd Date: \x1b[37m${value.endDate}` : ''
+          `    • Start Date: \x1b[37m${
+            monthNames[startDate.getMonth()]
+          } ${startDate.getFullYear()} ${
+            value.endDate
+              ? `\x1b[36mEnd Date: \x1b[37m${
+                  monthNames[endDate.getMonth()]
+                } ${endDate.getFullYear()}`
+              : ''
           }`,
         )
         writeCyan()

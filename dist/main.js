@@ -22,6 +22,20 @@ var getObjValue = function (obj, keys) {
     }
     return obj[key];
 };
+var monthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+];
 (function () {
     var term = new window.Terminal({
         theme: {
@@ -62,10 +76,14 @@ var getObjValue = function (obj, keys) {
         work: function () {
             var work = getResumeValue('work');
             work.forEach(function (value) {
+                var startDate = new Date(value.startDate);
+                var endDate = new Date(value.endDate);
                 writeGreen();
                 term.writeln("  - " + value.company);
                 writeCyan();
-                term.writeln("    \u2022 Start Date: \u001B[37m" + value.startDate + " " + (value.endDate ? "\u001B[36mEnd Date: \u001B[37m" + value.endDate : ''));
+                term.writeln("    \u2022 Start Date: \u001B[37m" + monthNames[startDate.getMonth()] + " " + startDate.getFullYear() + " " + (value.endDate
+                    ? "\u001B[36mEnd Date: \u001B[37m" + monthNames[endDate.getMonth()] + " " + endDate.getFullYear()
+                    : ''));
                 writeCyan();
                 term.writeln("    \u2022 Position: \u001B[37m" + value.position);
                 writeCyan();

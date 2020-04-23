@@ -225,7 +225,6 @@ var monthNames = [
             e.domEvent.keyCode !== 9 &&
             e.domEvent.keyCode !== 39 &&
             e.domEvent.keyCode !== 37;
-        console.log(e.domEvent.keyCode);
         if (e.domEvent.keyCode === 13) {
             console.log('currentLine', currentLine);
             // handlePrompt()

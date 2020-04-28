@@ -10,6 +10,7 @@
   "lib": ["es2015", "es5"],
   "include": [
     "main.ts",
-    "types.ts"
+    "types.ts",
+    "resume.ts"
   ]
 }

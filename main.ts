@@ -1,5 +1,4 @@
 const openUrl = url => {
-  console.log('url', url)
   const win = window.open(url, '_blank')
   win.focus()
 }
@@ -281,8 +280,6 @@ const monthNames = [
       e.domEvent.keyCode !== 37
 
     if (e.domEvent.keyCode === 13) {
-      console.log('currentLine', currentLine)
-      // handlePrompt()
       if (typeof promptAction === 'function') {
         if (currentLine === 'y' || currentLine === 'yes') {
           executePromptAction()
@@ -294,7 +291,6 @@ const monthNames = [
       } else {
         handlePrompt()
       }
-      // prompt()
     } else if (e.domEvent.keyCode === 8) {
       // Do not delete the prompt
       if ((term as any)._core.buffer.x > 2) {

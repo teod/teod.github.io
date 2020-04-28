@@ -1,5 +1,4 @@
 var openUrl = function (url) {
-    console.log('url', url);
     var win = window.open(url, '_blank');
     win.focus();
 };
@@ -226,8 +225,6 @@ var monthNames = [
             e.domEvent.keyCode !== 39 &&
             e.domEvent.keyCode !== 37;
         if (e.domEvent.keyCode === 13) {
-            console.log('currentLine', currentLine);
-            // handlePrompt()
             if (typeof promptAction === 'function') {
                 if (currentLine === 'y' || currentLine === 'yes') {
                     executePromptAction();
@@ -241,7 +238,6 @@ var monthNames = [
             else {
                 handlePrompt();
             }
-            // prompt()
         }
         else if (e.domEvent.keyCode === 8) {
             // Do not delete the prompt

@@ -11,7 +11,7 @@
       "address": "",
       "postalCode": "",
       "city": "Cluj-Napoca",
-      "countryCode": "RO",
+      "country": "Romania",
       "region": ""
     },
     "profiles": [
@@ -138,7 +138,7 @@
   "education": [
     {
       "institution": "Universitatea Tehnică din Cluj-Napoca",
-      "area": "Tehnologia informației",
+      "area": "Computer Engineering",
       "studyType": "",
       "startDate": "2009-09-30",
       "endDate": "2013-07-31",

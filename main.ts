@@ -136,6 +136,22 @@ const monthNames = [
         writeWhite()
       })
     },
+    education: () => {
+      const education = getResumeValue('education')
+
+      education.forEach(value => {
+        const startDate = new Date(value.startDate)
+        const endDate = new Date(value.endDate)
+
+        writeGreen()
+        term.writeln(`  • ${value.institution}`)
+        term.writeln(`    - ${value.area}`)
+        term.writeln(
+          `    - ${startDate.getFullYear()} - ${endDate.getFullYear()}`,
+        )
+        writeWhite()
+      })
+    },
     linkedin: () => {
       const key = 'basics.profiles[0].url'
       attachPromptAction(() => {

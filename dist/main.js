@@ -106,6 +106,18 @@ var monthNames = [
                 writeWhite();
             });
         },
+        education: function () {
+            var education = getResumeValue('education');
+            education.forEach(function (value) {
+                var startDate = new Date(value.startDate);
+                var endDate = new Date(value.endDate);
+                writeGreen();
+                term.writeln("  \u2022 " + value.institution);
+                term.writeln("    - " + value.area);
+                term.writeln("    - " + startDate.getFullYear() + " - " + endDate.getFullYear());
+                writeWhite();
+            });
+        },
         linkedin: function () {
             var key = 'basics.profiles[0].url';
             attachPromptAction(function () {

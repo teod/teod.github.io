@@ -45,7 +45,7 @@ var onResumeLoad = function (resume) {
         var end = new Date(endDate);
         var formattedEnd = !endDate
             ? 'present'
-            : monthNames[start.getMonth()] + " " + start.getFullYear();
+            : monthNames[end.getMonth()] + " " + end.getFullYear();
         var technologies = highlights.reduce(function (techAcc, highlight) {
             return (techAcc += "<li class=\"bullet\">" + highlight + "</li>");
         }, '');

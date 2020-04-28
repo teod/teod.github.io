@@ -82,7 +82,7 @@ const onResumeLoad = resume => {
       const end = new Date(endDate)
       const formattedEnd = !endDate
         ? 'present'
-        : `${monthNames[start.getMonth()]} ${start.getFullYear()}`
+        : `${monthNames[end.getMonth()]} ${end.getFullYear()}`
 
       const technologies = highlights.reduce(
         (techAcc, highlight) =>

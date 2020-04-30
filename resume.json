@@ -6,7 +6,7 @@
     "email": "teodruta@gmail.com",
     "phone": "",
     "website": "https://teod.github.io",
-    "summary": "I am a software engineer with a solid javascript and front-end background. For the past years my main technologies I worked with are React and React Native. I also like to dive into native development from time to time.",
+    "summary": "I am a software engineer with a solid javascript and front-end background. For the past years the main technologies I worked with are React and React Native. My favorite areas are web and mobile development, but I also like to work occasionaly on back-end technologies.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -41,16 +41,19 @@
         "React Native",
         "GraphQL",
         "Apollo Client",
+        "NodeJS",
+        "Express",
         "Storybook",
         "Webpack",
         "Babel",
         "Jest",
         "Cypress",
+        "Typescript",
         "Detox"
       ],
       "position": "Software Engineer",
       "startDate": "2019-03-31",
-      "summary": "",
+      "summary": "Working on financial projects in the digital banking industry. Working both on web, mobile apps with react and react-native and as well on the backend using NodeJS. Mentoring and leading a front-end team for a digital bank startup based in New-York.",
       "website": "https://www.linkedin.com/company/33617"
     },
     {
@@ -69,7 +72,7 @@
       ],
       "position": "Software Engineer",
       "startDate": "2016-11-30",
-      "summary": "",
+      "summary": "Worked on an e-learning platform on the web and mobile app with react and react-native. Completed the full app project development life cycle.",
       "website": "https://www.linkedin.com/company/9475890"
     },
     {
@@ -78,7 +81,7 @@
       "highlights": ["React", "Redux", "Webpack", "Babel"],
       "position": "Software Engineer Consultant",
       "startDate": "2016-09-30",
-      "summary": "",
+      "summary": "Worked on a CMS web solution for an auto insurance company with react and redux.",
       "website": "https://www.linkedin.com/company/1988641"
     },
     {
@@ -87,7 +90,7 @@
       "highlights": ["React", "Redux", "Webpack", "Babel"],
       "position": "Software Engineer",
       "startDate": "2016-06-30",
-      "summary": "",
+      "summary": "Implemented the Front-end for a client relationship management tool with multiple relations between the structural entities of the app (fashion and beauty industry).",
       "website": "https://www.linkedin.com/company/12127"
     },
     {
@@ -106,16 +109,16 @@
       ],
       "position": "Software Engineer",
       "startDate": "2014-08-31",
-      "summary": "",
+      "summary": "Worked on multiple projects both open soure and financial projects in the trading area. Integrated trading platforms using react and its eco-system.",
       "website": "https://www.linkedin.com/company/33617"
     },
     {
       "company": "Linkscreens",
       "endDate": "2014-08-31",
-      "highlights": ["jQuery", "EmberJS"],
+      "highlights": ["jQuery", "EmberJS", "Javascript", "Custom Framework"],
       "position": "Software Engineer",
       "startDate": "2013-07-31",
-      "summary": "",
+      "summary": "Worked on a multimedia web platform, a data aggregator for major video streaming platforms with interactive capabilities. It was made with an in-house custom framework based on jQuery and vanilla javascript.",
       "website": ""
     },
     {
@@ -124,14 +127,16 @@
       "highlights": [
         "PHP",
         "Wordpress",
+        "OsCommerce",
         "MySQL",
         "Magento",
         "jQuery",
+        "Javascript",
         "CodeIgniter"
       ],
       "position": "Software Engineer",
       "startDate": "2012-06-30",
-      "summary": "",
+      "summary": "Worked on multiple e-commerce projects with Wordpress, Magento, OsCommerce and CodeIgniter.",
       "website": ""
     }
   ],

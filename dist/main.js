@@ -87,6 +87,8 @@ var monthNames = [
                 term.writeln("    \u2022 Position: \u001B[37m" + value.position);
                 writeCyan();
                 term.writeln("    \u2022 Technologies: \u001B[37m" + value.highlights.join(', '));
+                writeCyan();
+                term.writeln("    \u2022 Summary: \u001B[37m" + value.summary);
                 writeWhite();
             });
         },

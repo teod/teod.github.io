@@ -115,6 +115,8 @@ const monthNames = [
         term.writeln(
           `    • Technologies: \x1b[37m${value.highlights.join(', ')}`,
         )
+        writeCyan()
+        term.writeln(`    • Summary: \x1b[37m${value.summary}`)
         writeWhite()
       })
     },

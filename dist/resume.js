@@ -1,4 +1,4 @@
-var monthNames = [
+var MONTH_NAMES = [
     'January',
     'February',
     'March',
@@ -41,11 +41,11 @@ var onResumeLoad = function (resume) {
     var workHTML = work.reduce(function (acc, _a) {
         var company = _a.company, startDate = _a.startDate, endDate = _a.endDate, position = _a.position, website = _a.website, highlights = _a.highlights, summary = _a.summary;
         var start = new Date(startDate);
-        var formattedStart = monthNames[start.getMonth()] + " " + start.getFullYear();
+        var formattedStart = MONTH_NAMES[start.getMonth()] + " " + start.getFullYear();
         var end = new Date(endDate);
         var formattedEnd = !endDate
             ? 'present'
-            : monthNames[end.getMonth()] + " " + end.getFullYear();
+            : MONTH_NAMES[end.getMonth()] + " " + end.getFullYear();
         var technologies = highlights.reduce(function (techAcc, highlight) {
             return (techAcc += "<li class=\"bullet\">" + highlight + "</li>");
         }, '');

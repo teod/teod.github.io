@@ -1,4 +1,4 @@
-const monthNames = [
+const MONTH_NAMES = [
   'January',
   'February',
   'March',
@@ -77,12 +77,12 @@ const onResumeLoad = resume => {
     ) => {
       const start = new Date(startDate)
       const formattedStart = `${
-        monthNames[start.getMonth()]
+        MONTH_NAMES[start.getMonth()]
       } ${start.getFullYear()}`
       const end = new Date(endDate)
       const formattedEnd = !endDate
         ? 'present'
-        : `${monthNames[end.getMonth()]} ${end.getFullYear()}`
+        : `${MONTH_NAMES[end.getMonth()]} ${end.getFullYear()}`
 
       const technologies = highlights.reduce(
         (techAcc, highlight) =>

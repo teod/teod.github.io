@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="public/xterm.css" />
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+  <body>
+    <div id="terminal"></div>
+    <script src="public/xterm.js"></script>
+    <script src="public/xterm-addon-fit.js"></script>
+    <script>
+      window.FitAddon = FitAddon.FitAddon
+    </script>
+    <script>
+      var request = new XMLHttpRequest()
+      request.overrideMimeType('application/json')
+      request.open('GET', '/resume.json', true)
+      request.onreadystatechange = function () {
+        if (request.readyState === 4 && request.status == '200') {
+          window.resume = JSON.parse(request.responseText)
+        }
+      }
+      request.send(null)
+    </script>
+    <script src="dist/main.js"></script>
+  </body>
+</html>

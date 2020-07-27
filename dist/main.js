@@ -70,7 +70,7 @@ var monthNames = [
         name: function () { return writeFromResume('basics.name'); },
         occupation: function () { return writeFromResume('basics.label'); },
         email: function () { return writeFromResume('basics.email'); },
-        summary: function () { return writeFromResume('basics.summary'); },
+        about: function () { return writeFromResume('basics.summary'); },
         location: function () { return writeFromResume('basics.location.city'); },
         work: function () {
             var work = getResumeValue('work');

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@keyframes translateDown {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+:root {
+  --name-color: #FFCC95;
+  --light-color: #E6E6E6;
+  --blue-color: #45A9F9;
+}
+
+body {
+  background-color: #2a2c2d;
+}
+
+.container {
+  font-family: 'Lato', sans-serif;
+  animation: translateDown 0.5s;
+  padding: 20px 40px;
+  display: none;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.name h1 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--name-color);
+  font-size: 44px;
+  margin-top: 0px;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0px 2px var(--light-color);
+}
+
+.about {
+  font-size: 20px;
+  color: var(--light-color);
+  flex: 0.9;
+}
+
+.resume {
+  margin: 10px 0;
+  text-align: center;
+}
+
+h3 {
+  margin: 10px 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 38px;
+  color: var(--blue-color);
+  text-align: center;
+}
+
+.resume p,
+.contact p {
+  font-size: 18px;
+  color: var(--light-color);
+  text-align: center;
+}
+
+.resume > a {
+  color: #19f9d899;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.resume > a:hover {
+  text-decoration: underline;
+}
+
+.plain-link {
+  font-size: 18px;
+  color: var(--light-color);
+}
+
+.plain-link:hover {
+  color: #19f9d899;
+}
+
+.social {
+  margin-top: 60px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg {
+  fill: var(--light-color);
+  height: 100px;
+  width: 100px;
+}
+
+.social-item {
+  cursor: pointer;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+}
+
+.social-item .svg:hover {
+  fill: #3E4250;
+}
+
+@media only screen and (max-width: 520px) {
+  .container {
+    padding: 10px;
+  }
+
+  .description {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about,
+  .name {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .social {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}

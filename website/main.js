@@ -24,8 +24,6 @@
     if (request.readyState === 4 && request.status === 200) {
       const response = JSON.parse(request.responseText)
 
-      console.log(response)
-
       const aboutParagraph = document.querySelector('.about > p')
       aboutParagraph.innerHTML = response.basics.summary
       const profiles = response.basics.profiles

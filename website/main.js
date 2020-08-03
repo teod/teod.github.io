@@ -44,7 +44,7 @@ const mobileCheck = function () {
         >.
       </p>
       <p>
-        If you'll open this website from a computer browser you're in a for a big surprise.
+        If you'll open this website from a computer browser you're in for a big surprise.
       </p>
     </div>
     `

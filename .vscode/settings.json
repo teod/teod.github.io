@@ -20,7 +20,6 @@
   },
   "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "eslint.workingDirectories": ["mobile", "shared", "web"]
+    "source.fixAll.eslint": "explicit"
+  }
 }
